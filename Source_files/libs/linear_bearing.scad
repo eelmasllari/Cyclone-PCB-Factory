@@ -36,6 +36,7 @@ function linearBearingDimensions(model) =
     model == "LM60UU"  ?   [ 60*mm,  90*mm, 110*mm,  85.0*mm,  86.5*mm, 3.15*mm]:
     model == "LM80UU"  ?   [ 80*mm, 120*mm, 140*mm, 105.5*mm, 116.0*mm, 4.15*mm]:
     model == "LM100UU" ?   [100*mm, 150*mm, 150*mm, 125.5*mm, 145.0*mm, 4.15*mm]:
+    model == "BUSHING8" ?   [8*mm, 12*mm, 12*mm, 0*mm, 0*mm, 0*mm]:
   /*model == "LM8UU"   ?*/ [  8*mm,  15*mm,  24*mm,  17.5*mm,  14.3*mm, 1.10*mm];
 
 

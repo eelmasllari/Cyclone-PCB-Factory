@@ -16,7 +16,7 @@
 		base_corner_radius	= 20;
 		base_corner_res		= 10;
 		foot_offset = 25;
-		
+
 	// --- Axes reference position ---
 	// Note: The reference coordinates are centred like this:
 	// Y axis reference is the Y smooth rod end, BACK of RIGHT FRAME
@@ -37,7 +37,7 @@
 		axes_Xsmooth_separation = 40 + animatePart(9);
 		axes_Zsmooth_separation = 40 + animatePart(10,overlap=0);
 
-		
+
 	// --- Work bed ---
 		Ycarriage_linearBearingSeparation = 50;
 		workbed_size_X			= axes_Ysmooth_separation+50;
@@ -49,11 +49,11 @@
 		PCB_dimY = 100;
 		PCB_dimZ = 1.6;
 		PCB_holder_edge_length = 3;
-		
+
 	// --- Z carriage ---
 	  Z_carriage_wall_thickness = 9;
-	  Z_carriage_wall_width = 54;		
-		
+	  Z_carriage_wall_width = 54;
+
   // --- X frames ---
 	  X_frames_additional_thickness = 5;
 		X_frame_footThickness = 10;
@@ -63,7 +63,7 @@
 		X_motorWallSeparation = 5;
 		X_motorRotatedOffset = 5;
 		X_gearWallSeparation = 5;
-		
+
   // --- Y frames ---
 		Y_frame_footThickness = 10;
 		Y_motorWallSeparation = 5;
@@ -72,7 +72,7 @@
 		Y_foot_additional_separation = 5;
 		Y_endstopHolderRotation = 5;
 		Logo = true; // Add logo to the Y Smooth Rod Idlers
-		
+
 	// --- Axes sizes ---
 	// *_rodLen = length
 	// *_rodD = diameter
@@ -94,25 +94,25 @@
 		// Z threaded rod
 			axes_Zthreaded_rodLen	= 90;
 			axes_Zthreaded_rodD	= 8.5 + animatePart(4,dist=5);
-			
+
 	// --- Bearings ---
-		Y_linearBearingModel = "LM8UU";
-		X_linearBearingModel = "LM8UU";
+		Y_linearBearingModel = "BUSHING8";
+		X_linearBearingModel = "BUSHING8";
 		X_linearBearingSeparation = 0;
-		Z_linearBearingModel = "LM8UU";
+		Z_linearBearingModel = "BUSHING8";
 		Z_threaded_rodBearingModel = 608;
 		Y_threaded_rodBearingModel = 608;
 		Y_threaded_rodBearingDepth = 3;
 		X_threaded_rodBearingModel = 608;
 		X_threaded_rod_bearingDepth = 3;
-		
+
 	// --- Steppers ---
 		//Y_motorModel = Nema17;
 		//X_motorModel = Nema17;
 		//Z_motorModel = Nema17;
 		Z_motor_adjust_margin = 5;
 
-	// --- Screw sizes --- 
+	// --- Screw sizes ---
 	// M3, M4, etc (integers only), at the moment only M3 and M4 will work.
 		Y_frontFrame_footScrewSize = 3;
 		Y_backFrame_footScrewSize = 3;
@@ -122,11 +122,11 @@
 		Y_threaded_rodNutSize = 8;
 		X_threaded_rodNutSize = 8;
 		Z_threaded_rodNutSize = 8;
-		
+
 		Y_nutHolder_screwSize = 3;
 		Y_singleLinearBearingHolder_screwSize = 3;
 		Y_PCBholder_screwSize = 3;
-		
+
 		Y_backlash_washer_D = 15.8;
 	  Y_backlash_washer_thickness = 1.6;
 		X_backlash_washer_D = 15.8-0.5;
@@ -136,9 +136,9 @@
 
 		Y_rightSmoothRodIdler_rodScrewSize = 3;
 		X_Frame_rodScrewSize = 3;
-		
+
 		spindle_holder_screwSize = 3;
-		
+
 	// --- Gears ---
 		axes_XgearSeparation = 37;
 	  X_rodGearRatio = 21; // Number of tooth
@@ -151,7 +151,7 @@
 		Y_rodGearRatio = 21; // Number of tooth
 		Y_motorGearRatio = 21; // Number of tooth
 		Y_gear_thickness = 10;
-		
+
 	// --- Gear Cover ---
 	  gearCover_margin = 4;
 		rodGearAddedgearCover_margin = 0;
@@ -162,17 +162,17 @@
 		gearCoverExtraHeight = 5;
 		gearCoverExtraRadius = -7;
 		gearCover_truncationAngle = 10;
-	
+
 	// --- Tool type: Select tool
 		spindle_holder = 1;  //Aluminium part to hold the spindle
 		dremel = 0;
-		tool = dremel;
+		tool = spindle_holder;
 
 	// --- Spindle Motor Holder ---
 		spindle_holder_bolt_X_separation = 70;
 		spindle_holder_bolt_Z_separation = 18;
 		spindle_holder_bolt_diam = 6;
-		
+
 	// --- Spindle Motor ---
 		spindle_motor_diam_top = 51.3;
 		spindle_motor_diam_top_smaller = 47.5;
@@ -180,13 +180,13 @@
 		spindle_motor_sidelen = 32;
 		spindle_holder_thickness = 8;
 		spindle_motor_length = 90;
-		
+
 	// --- Text ---
 		textHscale = 0.8;
 		textThickness = 1.5;
 		topText = "CYCLONE";
 		bottomText = "PCB Factory";
-		
+
 	// --- Tolerances ---
 		Y_threaded_rod_Tolerance = 0.5;
 		Y_linearBearing_pressureFitTolerance = 0.5;
@@ -197,10 +197,10 @@
 		Z_radialBearingHole_tolerance = 0.25;
 		LinearBearingPressureFitTolerance = 0.4;
 		screwHoleTolerance = 0.4;
-		
+
 		Z_threaded_rod_Tolerance = 0.5;
-		
-		
+
+
 // --- Render options ---
 
 	// --- Part colours ---
@@ -219,12 +219,12 @@
 		render_DXF_workbed = false; // Render work bed for DXF export
 		render_bases_outline = false; //Toggle for rendering outline DXFs
 		DXF_offset = 0.4; //Needed to adjust the tolerance of the laser cutter
-		
+
 	// --- Carriage positions ---
 		axes_Xcarriage_pos = axes_Xsmooth_rodLen/2+sin($t*360)*axes_Xsmooth_rodLen/3;
 		axes_Ycarriage_pos = axes_Ysmooth_rodLen/2+sin($t*360)*axes_Ysmooth_rodLen/4.1;
-		axes_Zcarriage_pos = axes_Zsmooth_rodLen/2+sin($t*360)*axes_Zsmooth_rodLen/8;	
-		
+		axes_Zcarriage_pos = axes_Zsmooth_rodLen/2+sin($t*360)*axes_Zsmooth_rodLen/8;
+
 	// --- Parts ---
 		Render_X_leftFrame = true;
 		Render_X_rightFrame = true;
@@ -251,7 +251,7 @@
 		Render_YsubPart_linearBearingHolders = true;
 		Render_YsubPart_nutHolder = true;
 		//Render_rodHolder = true;
-		
+
 		alt_XZ_carriage = false;
-		
-		
+
+

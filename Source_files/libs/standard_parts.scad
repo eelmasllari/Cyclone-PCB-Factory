@@ -175,7 +175,7 @@ module stepperMotor(screwHeight=10, renderPart=false, echoPart=false) {
 	realScrewLength = screwHeight+METRIC_NUT_THICKNESS[3];
 	echo("BOM:");
 	scale([1,1,-1]) renderStandardPart(renderPart) {
-		translate([0,0,-1]) motor(Nema17, size=NemaMedium, dualAxis=false);
+		translate([0,0,-1]) motor(Nema17, size=NemaLong, dualAxis=false);
 		translate([nema_screw_separation/2,nema_screw_separation/2,-realScrewLength]) rotate([-90,0,0]) screw_single(size=3,length=realScrewLength+5,echoPart=echoPart);
 		translate([nema_screw_separation/2,-nema_screw_separation/2,-realScrewLength]) rotate([-90,0,0]) screw_single(size=3,length=realScrewLength+5,echoPart=echoPart);
 		translate([-nema_screw_separation/2,-nema_screw_separation/2,-realScrewLength]) rotate([-90,0,0]) screw_single(size=3,length=realScrewLength+5,echoPart=echoPart);
