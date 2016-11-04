@@ -174,19 +174,19 @@
 		spindle_holder_bolt_diam = 6;
 		
 	// --- Spindle Motor ---
-		spindle_motor_diam_top = 51.3;
-		spindle_motor_diam_top_smaller = 47.5;
-		spindle_motor_diam = 47.5;
-		spindle_motor_sidelen = 32;
+		spindle_motor_diam_top = 54.5;
+		spindle_motor_diam_top_smaller = 50;
+		spindle_motor_diam = 49;
+		spindle_motor_sidelen = 40;
 		spindle_holder_thickness = 8;
 		spindle_motor_length = 90;
 		
 	// --- Text ---
 		textHscale = 0.8;
 		textThickness = 1.5;
-		topText = "CYCLONE";
-		bottomText = "PCB Factory";
-		
+		topText = "DREMEL";
+		bottomText ="300";
+
 	// --- Tolerances ---
 		Y_threaded_rod_Tolerance = 0.5;
 		Y_linearBearing_pressureFitTolerance = 0.5;
@@ -196,11 +196,11 @@
 		Z_linearBearingHole_tolerance = 0.25;
 		Z_radialBearingHole_tolerance = 0.25;
 		LinearBearingPressureFitTolerance = 0.4;
-		screwHoleTolerance = 0.4;
-		
+		screwHoleTolerance = 0;
+
 		Z_threaded_rod_Tolerance = 0.5;
-		
-		
+
+
 // --- Render options ---
 
 	// --- Part colours ---

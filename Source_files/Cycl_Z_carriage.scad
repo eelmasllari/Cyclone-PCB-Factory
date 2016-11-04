@@ -66,11 +66,13 @@ module Cyclone_Z_carriage(z_thread_rod_length=120, with_extra_parts=false, explo
 		if (top_part){
 			translate([0,38,0]) rotate([0,0,0]) {
 			translate([0,0,-0.05]) {
-				cylinder(r=spindle_motor_diam_top_smaller/2,h=length+2);
+                hull() {
+                cylinder(r=spindle_motor_diam_top_smaller/2,h=length+2);
 				intersection() {
 					cylinder(r=spindle_motor_diam_top/2,h=length+2);
 					cube([spindle_motor_diam_top,spindle_motor_sidelen,2*(length+2)],center=true);
 				}
+            }
 			}
 			translate([0,-4,-0.01]) cube([90,4,length+2]);
 			translate ([spindiam/2+15,15,length/2]) rotate([90,0,0]) cylinder(r=2,h=30);
