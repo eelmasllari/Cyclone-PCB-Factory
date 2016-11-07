@@ -159,7 +159,7 @@ render_2D_or_3D() {
 							if(draw_references) %frame();
 						
 							if(Render_Z_carriage)
-								Cyclone_Z_carriage();
+								!Cyclone_Z_carriage();
 						}
 				}
 			}
